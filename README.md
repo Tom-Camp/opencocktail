@@ -27,10 +27,8 @@ drink_type: tonic
 garnish: Garnish with a slice of lime.
 serve_in: collins glass
 steps:
-  - step:
-      Add gin to a collins glass.
-  - step:
-      Add tonic water.
+  - step: Add gin to a collins glass.
+  - step: Add tonic water.
 ```
 
 ## Testing
