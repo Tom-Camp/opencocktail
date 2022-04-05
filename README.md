@@ -1,17 +1,16 @@
 # OpenCocktail Library
 
-A collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off
-of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
+A collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
 
 ## Prerequisites
 
-You will need to know a few cocktail recipes. If you don't know any, well, you've
-come to the right place. [View recipe files](./recipes/)
+You will need to know a few cocktail recipes. If you don't know any, well, you've come to the right place.
+
+* [View recipe files](./recipes/)
 
 ## Contributing
 
-Create recipes using the schema outline in the [schema.json](./schema.json) file. Add
-new recipes to the [recipes](./recipes/) directory. The basic format is as follows:
+Create recipes using the schema outline in the [schema.json](./schema.json) file. Add new recipes to the [recipes](./recipes/) directory. The basic format is as follows:
 
 ```yaml
 drink_name: Gin & Tonic
