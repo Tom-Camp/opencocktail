@@ -1,0 +1,16 @@
+drink_name: G & T
+ingredients:
+  - gin:
+    amounts:
+      - amount: 2.5
+        unit: ounce
+  - tonic water:
+    amounts:
+      - amount: 4
+        unit: ounce
+drink_type: tonic
+garnish: slice of lime.
+serve_in: collins glass
+steps:
+  - step: Add gin to a collins glass.
+  - step: Add tonic water.

@@ -1,0 +1,25 @@
+drink_name: Elder Fashion
+ingredients:
+  - plymouth gin:
+    amounts:
+      - amount: 2
+        unit: ounce
+  - elderflower liquour:
+    amounts:
+      - amount: .5
+        unit: ounce
+  - orange bitters:
+    amounts:
+      - amount: 2
+        unit: dash
+drink_type: old fashioned
+garnish: twist of grapefruit.
+serve_in: old fashioned glass
+steps:
+  - step: Stir all ingredients over ice.
+  - step: Strain into an old fashioned glass over 1 large ice cube.
+  - step: Garnish with a grapefruit twist.
+source_book:
+  author: David Kaplan, Nick Fauchald, Alex Day
+  title: Death & Co. Modern Classic Cocktails
+  isbn: 1607745259
