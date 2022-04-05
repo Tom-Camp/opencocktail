@@ -9,7 +9,7 @@ ingredients:
       - amount: 4
         unit: ounce
 drink_type: tonic
-garnish: Garnish with a slice of lime.
+garnish: slice of lime.
 serve_in: collins glass
 steps:
   - step:

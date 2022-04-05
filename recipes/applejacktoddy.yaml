@@ -12,7 +12,7 @@ ingredients:
     amounts:
       - amount: 4
 drink_type: toddy
-garnish: Garnish with a cinnamon stick.
+garnish: cinnamon stick.
 serve_in: toddy glass
 steps:
   - step:

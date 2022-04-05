@@ -1,0 +1,36 @@
+drink_name: Añejo Highball
+ingredients:
+  - aged rum:
+    amounts:
+      - amount: 1.5
+        unit: ounce
+  - cointreau:
+    amounts:
+      - amount: .25
+        unit: ounce
+    substitutions:
+      - orange liqueur
+  - lime juice:
+    amounts:
+      - amount: .25
+        unit: ounce
+  - bitters:
+    amounts:
+      - amount: 1
+        unit: dash
+  - ginger ale:
+    amounts:
+      - amount: 2
+        unit: ounce
+    substitutions:
+      - ginger beer
+drink_type: highball
+garnish: a slice of lime.
+serve_in: collins glass
+steps:
+  - step:
+      Add rum, cointreau, lime juice, and bitters to a shaker and shake with ice.
+  - step:
+      Strain into a highball glass 3/4 filled with ice.
+  - step:
+      Top with ginger ale.
