@@ -1,0 +1,267 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://opencocktail.us/schema.json",
+    "title": "OpenCocktail Format",
+    "description": "A schema that validates cocktail recipes.",
+    "definitions": {
+        "none": {
+            "type": "string",
+            "enum": [
+                "none",
+                "None"
+            ]
+        },
+        "note": {
+            "type": "string"
+        },
+        "unit": {
+            "type": "string",
+            "title": "Unit",
+            "examples": [
+                "ounce",
+                "shot",
+                "milliliter",
+                "dram"
+            ]
+        },
+        "step": {
+            "type": "object",
+            "properties": {
+                "step": {
+                    "type": "string",
+                    "description": "Description of the step."
+                },
+                "notes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/note"
+                    },
+                    "description": "A list of notes relevant to this step."
+                }
+            },
+            "required": [
+                "step"
+            ],
+            "additionalProperties": false,
+            "description": "Describes step to be performed to make this drink."
+        },
+        "ingredient": {
+            "type": "object",
+            "patternProperties": {
+                "^[a-zA-Z ]*$": {
+                    "type": "object",
+                    "properties": {
+                        "amounts": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "amount": {
+                                        "anyOf": [
+                                            {
+                                                "type": "number"
+                                            },
+                                            {
+                                                "type": "string"
+                                            }
+                                        ],
+                                        "description": "The amount of the unit to use."
+                                    },
+                                    "unit": {
+                                        "$ref": "#/definitions/unit",
+                                        "description": "The unit, relevant to the amount."
+                                    }
+                                },
+                                "required": [
+                                    "amount",
+                                    "unit"
+                                ],
+                                "additionalProperties": false
+                            },
+                            "description": "A list of dicts which describe the amounts to use. Normally, the list will only contain one dict."
+                        },
+                        "processing": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "A list of tags which describe the processing of this item. For instance, 'muddled', 'juiced', 'crushed', etc.",
+                            "examples": [
+                                "muddled",
+                                "juiced",
+                                "crushed"
+                            ]
+                        },
+                        "notes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/note"
+                            },
+                            "description": "Any notes specific to this ingredient"
+                        },
+                        "substitutions": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ingredient"
+                            },
+                            "description": "This field is a list of ingredients, in exactly the same format as a regular ingredient list item, minus the substitutions field."
+                        }
+                    },
+                    "required": [
+                        "amounts"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "minProperties": 1,
+            "maxProperties": 1
+        }
+    },
+    "type": "object",
+    "properties": {
+        "uuid": {
+            "type": "string",
+            "description": "The unique identifier for the drink"
+        },
+        "drink_name": {
+            "type": "string",
+            "description": "The name of this drink."
+        },
+        "notes": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/note"
+            },
+            "description": "General notes about the drink."
+        },
+        "steps": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/step"
+            },
+            "description": "A list, in order, of steps to be performed on the recipe."
+        },
+        "ingredients": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/ingredient"
+            },
+            "description": "A list of dicts, defining which ingredient items are to be added to the drink. These items should be listed in the order in which they are to be used."
+        },
+        "serve_in": {
+            "type": "string",
+            "description": "The type of glass to serve the drink in."
+        },
+        "garnish": {
+            "type": "string",
+            "description": "The garnish for the drink."
+        },
+        "drink_type": {
+            "type": "string",
+            "description": "The drink type. For example, cocktail, flip, highball, sour, etc.",
+            "examples": [
+                "cocktail",
+                "flip",
+                "highball",
+                "sour"
+            ]
+        },
+        "ratio": {
+            "type": "string",
+            "description": "The ratio of the ingredients. For example a martini might be expressed as 5:1 for 5 parts gin to 1 part vermouth."
+        },
+        "source_book": {
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "authors": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "This is a list. Refers to the author(s) of this drink. Can be the same as source_authors, if appropriate. If there was only one author, then they would be the only item in the list."
+                        },
+                        "title": {
+                            "type": "string",
+                            "description": "Title of the book. This is a single value, not a list."
+                        },
+                        "isbn": {
+                            "type": "string",
+                            "description": "International Standard Book Number, if available."
+                        },
+                        "notes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/note"
+                            },
+                            "description": "Any information about the book that does not fit into another field."
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "title",
+                        "authors"
+                    ]
+                },
+                {
+                    "$ref": "#/definitions/none"
+                }
+            ],
+            "description": "If this drink was originally pulled from a book, then the book information should go here. Recipe software should make an intelligent effort to include correct information in the correct fields, rather than just dumping everything into a generic notes field."
+        },
+        "source_authors": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "type": "string"
+                }
+            ],
+            "description": "Does not refer to the person who entered the drink; only refers to the original author of the crushed. If this crushed was based on another crushed by another person, then this field should contain the name of the original author."
+        },
+        "source_url": {
+            "type": "string",
+            "description": "The URL that this drink was copied from, if applicable."
+        },
+        "yields": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "amount": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "$ref": "#/definitions/unit"
+                    }
+                },
+                "dependencies": {
+                    "amount": {
+                        "required": [
+                            "unit"
+                        ]
+                    }
+                },
+                "additionalProperties": {
+                    "type": "number"
+                },
+                "maxProperties": 2
+            },
+            "description": "Refers to how many drinks this recipe makes. This is a list, which will normally contain one dict."
+        },
+        "author": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "drink_name",
+        "steps",
+        "ingredients"
+    ],
+    "additionalProperties": false
+}
