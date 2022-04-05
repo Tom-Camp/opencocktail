@@ -20,7 +20,5 @@ garnish: slice of lime
 serve_in: coupe
 ratio: "4:2:1"
 steps:
-  - step:
-      Shake all ingredients with ice, then strain into a coupe.
-  - step:
-      Garnish with a lime wedge.
+  - step: Shake all ingredients with ice, then strain into a coupe.
+  - step: Garnish with a lime wedge.

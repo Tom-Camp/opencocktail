@@ -22,15 +22,9 @@ garnish: sprig of mint
 serve_in: collins glass
 ratio: "4:2:1"
 steps:
-  - step:
-      Add cucmber slices to a shaker.
-  - step:
-      Add gin, lemon juice, and simple syrup to the shaker.
-  - step:
-      Muddle the cucmber vigorously.
-  - step:
-      Shake with ice.
-  - step:
-      Fine strain into a collins glass 3/4 full of ice.
-  - step:
-      Top off with soda water and garnish with a sprig of mint.
+  - step: Add cucmber slices to a shaker.
+  - step: Add gin, lemon juice, and simple syrup to the shaker.
+  - step: Muddle the cucmber vigorously.
+  - step: Shake with ice.
+  - step: Fine strain into a collins glass 3/4 full of ice.
+  - step: Top off with soda water and garnish with a sprig of mint.

@@ -1,0 +1,26 @@
+drink_name: Derby Cocktail
+ingredients:
+  - mint leaves:
+    amounts:
+      - amount: 5
+  - dry gin:
+    amounts:
+      - amount: 2
+        unit: ounce
+  - sugar syrup:
+    amounts:
+      - amount: .12
+        unit: ounce
+  - peach bitters:
+    amounts:
+      - amount: 2
+        unit: dash
+drink_type: cocktail
+garnish: mint leaf
+serve_in: coupe
+steps:
+  - step: Lightly muddle (bruise) mint leaves in a mixing glass.
+  - step: Add gin, sugar syrup and bitters to the glass.
+  - step: Stir with ice.
+  - step: Fine strain into a coupe and garnish with a mint leaf.
+source_url: https://www.diffordsguide.com/cocktails/recipe/4932/derby-cocktail

@@ -15,7 +15,5 @@ drink_type: toddy
 garnish: cinnamon stick.
 serve_in: toddy glass
 steps:
-  - step:
-      Add all of the ingredients to a toddy glass.
-  - step:
-      Fill with hot water.
+  - step: Add all of the ingredients to a toddy glass.
+  - step: Fill with hot water.

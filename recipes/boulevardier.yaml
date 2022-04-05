@@ -16,8 +16,8 @@ drink_type: tonic
 garnish: lemon twist
 serve_in: coupe
 steps:
-  - step:
-      Stir all ingredients over ice, then strain into coupe.
+  - step: Stir all ingredients over ice, then strain into coupe.
+  - step: Garnish with a twist of lemon.
 source_book:
   author: David Kaplan, Nick Fauchald, Alex Day
   title: Death & Co. Modern Classic Cocktails

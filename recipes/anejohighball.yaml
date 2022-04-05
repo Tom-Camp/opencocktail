@@ -28,9 +28,6 @@ drink_type: highball
 garnish: a slice of lime.
 serve_in: collins glass
 steps:
-  - step:
-      Add rum, cointreau, lime juice, and bitters to a shaker and shake with ice.
-  - step:
-      Strain into a highball glass 3/4 filled with ice.
-  - step:
-      Top with ginger ale.
+  - step: Add rum, cointreau, lime juice, and bitters to a shaker and shake with ice.
+  - step: Strain into a highball glass 3/4 filled with ice.
+  - step: Top with ginger ale.
