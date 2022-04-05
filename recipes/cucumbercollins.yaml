@@ -20,6 +20,7 @@ ingredients:
 drink_type: collins
 garnish: sprig of mint
 serve_in: collins glass
+ratio: "4:2:1"
 steps:
   - step:
       Add cucmber slices to a shaker.
