@@ -4,7 +4,7 @@ ingredients:
     amounts:
       - amount: 2
         unit: ounce
-  - elderflower liquour:
+  - elderflower liqueur:
     amounts:
       - amount: .5
         unit: ounce

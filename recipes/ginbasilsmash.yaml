@@ -1,0 +1,27 @@
+drink_name: Gin Basil Smash
+ingredients:
+  - dry gin:
+    amounts:
+      - amount: 2
+        unit: ounce
+  - lemon juice:
+    amounts:
+      - amount: .75
+        unit: ounce
+  - sugar syrup:
+    amounts:
+      - amount: .33
+        unit: ounce
+  - basil:
+    amounts:
+      - amount: 12
+        unit: leaf
+drink_type: smash
+garnish: twist of lemon.
+serve_in: rocks glass
+steps:
+  - step: Muddle the basil leaves in a shaker.
+  - step: Add the other ingredients to the shaker, add ice and shake. 
+  - step: Fine strain into an ice filled glass. 
+  - step: Garnish with a twist of lemon.
+source_url: https://www.diffordsguide.com/cocktails/recipe/3282/gin-basil-smash
