@@ -11,5 +11,5 @@ jobs:
     - uses: nrkno/yaml-schema-validator-github-action@v4
       with:
         schema: ../../schema.json
-        target: /recipes/
+        target: ../../recipes/
 
