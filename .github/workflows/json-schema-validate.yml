@@ -11,9 +11,9 @@ jobs:
     - name: Validate YAML Schema
       uses: ansible/ansible-lint-action@master
       with:
-        files-to-validate: [
+        files-to-validate: |
           {
             path: /recipes
             schema: /schema.json
           }
-        ]
+
