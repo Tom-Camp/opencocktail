@@ -12,5 +12,5 @@ jobs:
       with:
         schemaPath: './schema.json'
         files: |
-          ./recipes/anejohighball.yaml
+          ./recipes/*.yaml
 
