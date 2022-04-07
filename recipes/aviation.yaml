@@ -15,6 +15,7 @@ ingredients:
       unit: dash
 drink_type : cocktail
 serve_in   : coupe
+ratio      : 2:1
 steps      :
 - step: Add all ingredients to a shaker.
 - step: Shake well and strain into a coupe.
