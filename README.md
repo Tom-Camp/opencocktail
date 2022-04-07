@@ -55,6 +55,13 @@ source_book:
   isbn: '1234567890'
 ```
 
+### Git workflow
+
+* Create a new branch
+* Add your code
+* Commit and pass the pre-commits
+* Push your code and create a pull request
+
 ## Testing
 
 Mix one or more of the cocktails and then test them.
