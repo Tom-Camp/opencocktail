@@ -1,14 +1,17 @@
+---
 name: Validate JSONs
 
-on: [pull_request]
+on  : [pull_request]
 
 jobs:
-  verify-json-validation:
+  yaml-schema-validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: /schema.json
-          INPUT_JSONS: /recipes/*
+    - uses: actions/checkout@v2
+    - uses: InoUno/yaml-ls-check@develop
+      with:
+        schemaMapping: |
+          {
+              "schema.json": [ "recipes/*.yaml" ]
+          }
+
