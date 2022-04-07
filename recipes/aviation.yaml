@@ -1,0 +1,27 @@
+---
+drink_name : Aviation
+ingredients:
+- dry gin:
+    amounts:
+    - amount: 66
+      unit: ml
+- lemon juice:
+    amounts:
+    - amount: 34
+      unit: ml
+- maraschino liqueur:
+    amounts:
+    - amount: 2
+      unit: dash
+drink_type : cocktail
+serve_in   : coupe
+steps      :
+- step: Add all ingredients to a shaker.
+- step: Shake well and strain into a coupe.
+source_book:
+  authors:
+  - Harry Craddock
+  title: The Savoy Cocktail Book
+  isbn: '1626540926'
+notes      :
+- This recipe is based on a 100ml (3 ½ fl oz) mixed drink and are made for drinking vessels of approx. 150ml-200ml (5-7 fl oz).
