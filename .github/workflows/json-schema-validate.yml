@@ -9,8 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Validate YAML
-      uses: brittonhayes/validate-yaml
+    - uses: nwisbeta/validate-yaml-schema@v1.0.3
       with:
-        schemaPath: schema.json
-        files: |
-          recipes/*.yaml
+        yamlSchemasJson: |
+          {
+              "./schema.json": ["/recipes/*.yaml"],
+          }
