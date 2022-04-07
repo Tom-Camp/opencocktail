@@ -1,0 +1,18 @@
+---
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.2.0
+  hooks:
+  - id: trailing-whitespace
+- repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+  rev: 0.0.11  # or specific tag
+  hooks:
+  - id: yamlfmt
+    args: [--mapping, '2', --sequence, '2', --offset, '0', --colons, --width, '150']
+- repo: https://github.com/python-jsonschema/check-jsonschema
+  rev: 0.14.2
+  hooks:
+  - id: check-jsonschema
+    files: ^recipes/.*
+    types: [yaml]
+    args: [--schemafile, schema.json]

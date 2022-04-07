@@ -1,24 +1,26 @@
-drink_name: Daiquari
+---
+drink_name : Daiquari
 ingredients:
-  - white rum:
+- white rum:
     amounts:
-      - amount: 2
-        unit: ounce
-  - lime juice:
+    - amount: 2
+      unit: ounce
+- lime juice:
     amounts:
-      - amount: 1
-        unit: ounce
-    processing: fresh
-  - sugar syrup:
+    - amount: 1
+      unit: ounce
+    processing:
+    - fresh
+- sugar syrup:
     amounts:
-      - amount: .5
-        unit: ounce
+    - amount: .5
+      unit: ounce
     notes:
-      - note: 2 parts sugar to 1 part water
-drink_type: daiquari
-garnish: slice of lime
-serve_in: coupe
-ratio: "4:2:1"
-steps:
-  - step: Shake all ingredients with ice, then strain into a coupe.
-  - step: Garnish with a lime wedge.
+    - 2 parts sugar to 1 part water
+drink_type : daiquari
+garnish    : slice of lime
+serve_in   : coupe
+ratio      : 4:2:1
+steps      :
+- step: Shake all ingredients with ice, then strain into a coupe.
+- step: Garnish with a lime wedge.

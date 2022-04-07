@@ -1,28 +1,33 @@
-drink_name: Margarita
+---
+drink_name : Margarita
 ingredients:
-  - reposado tequila:
+- reposado tequila:
     amounts:
-      - amount: 1.5
-        unit: ounce
-  - lime juice:
+    - amount: 1.5
+      unit: ounce
+- lime juice:
     amounts:
-      - amount: 1
-        unit: ounce
-    processing: fresh squeezed
-  - cointreau:
+    - amount: 1
+      unit: ounce
+    processing:
+    - fresh squeezed
+- cointreau:
     amounts:
-      - amount: .75
-        unit: ounce
-    substitions:
-      - orange liqueur
-  - agave syrup:
+    - amount: .75
+      unit: ounce
+    substitutions:
+    - orange liqueur:
+        amounts:
+        - amount: .75
+          unit: ounce
+- agave syrup:
     amounts:
-      - amount: 1
-        unit: teaspoon
-drink_type: margarita
-garnish: salt and a slice of lime
-serve_in: margarita glass
-steps:
-  - step: Add all ingredients to a shaker and shake vigorously.
-  - step: Strain into an ice-filled margarita glass rimmed with salt.
-  - step: Garnish with a lime.
+    - amount: 1
+      unit: teaspoon
+drink_type : margarita
+garnish    : salt and a slice of lime
+serve_in   : margarita glass
+steps      :
+- step: Add all ingredients to a shaker and shake vigorously.
+- step: Strain into an ice-filled margarita glass rimmed with salt.
+- step: Garnish with a lime.
