@@ -1,6 +1,6 @@
 # OpenCocktail Library
 
-A collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
+The OpenCocktail Library is a collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
 
 ## Prerequisites
 
