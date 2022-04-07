@@ -10,6 +10,6 @@ jobs:
     - name: Validate YAML
       uses: brittonhayes/validate-yaml@v0.5.1
       with:
-        schemaPath: /schema.json
+        schemaPath: schema.json
         files: |
           recipes/*
