@@ -8,8 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: nrkno/yaml-schema-validator-github-action@v4
+    - uses: brittonhayes/validate-yaml
       with:
-        schema: ./schema.json
-        target: ./recipes/
+        schemaPath: './schema.json'
+        files: |
+          ./recipes/
 
