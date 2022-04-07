@@ -4,12 +4,16 @@ name: Validate JSONs
 on  : [pull_request]
 
 jobs:
-  verify-json-validation:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Validate YAML
-      uses: brittonhayes/validate-yaml@v0.5.1
+    - uses: actions/checkout@v2
+    - name: Validate YAML Schema
+      uses: ansible/ansible-lint-action@master
       with:
-        schemaPath: './schema.json'
-        files: |
-          recipes/*
+        files-to-validate: [
+          {
+            path: /recipes
+            schema: /schema.json
+          }
+        ]
