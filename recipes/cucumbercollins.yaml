@@ -1,30 +1,32 @@
-drink_name: Cucumber Collins
+---
+drink_name : Cucumber Collins
 ingredients:
-  - gin:
+- gin:
     amounts:
-      - amount: 2
-        unit: ounce
-  - lemon juice:
+    - amount: 2
+      unit: ounce
+- lemon juice:
     amounts:
-      - amount: 1
-        unit: ounce
-    processing: fresh
-  - simple syrup:
+    - amount: 1
+      unit: ounce
+    processing:
+    - fresh
+- simple syrup:
     amounts:
-      - amount: .5
-        unit: ounce
-  - cucumber:
+    - amount: .5
+      unit: ounce
+- cucumber:
     amounts:
-      - amount: 4
-        unit: slices
-drink_type: collins
-garnish: sprig of mint
-serve_in: collins glass
-ratio: "4:2:1"
-steps:
-  - step: Add cucmber slices to a shaker.
-  - step: Add gin, lemon juice, and simple syrup to the shaker.
-  - step: Muddle the cucmber vigorously.
-  - step: Shake with ice.
-  - step: Fine strain into a collins glass 3/4 full of ice.
-  - step: Top off with soda water and garnish with a sprig of mint.
+    - amount: 4
+      unit: slices
+drink_type : collins
+garnish    : sprig of mint
+serve_in   : collins glass
+ratio      : 4:2:1
+steps      :
+- step: Add cucmber slices to a shaker.
+- step: Add gin, lemon juice, and simple syrup to the shaker.
+- step: Muddle the cucmber vigorously.
+- step: Shake with ice.
+- step: Fine strain into a collins glass 3/4 full of ice.
+- step: Top off with soda water and garnish with a sprig of mint.

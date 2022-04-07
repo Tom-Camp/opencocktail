@@ -1,24 +1,28 @@
-drink_name: Boulevardier
+---
+drink_name : Boulevardier
 ingredients:
-  - bourbon:
+- bourbon:
     amounts:
-      - amount: 1.5
-        unit: ounce
-  - sweet vermouth:
+    - amount: 1.5
+      unit: ounce
+- sweet vermouth:
     amounts:
-      - amount: .75
-        unit: ounce
-  - campari:
+    - amount: .75
+      unit: ounce
+- campari:
     amounts:
-      - amount: .75
-        unit: ounce
-drink_type: tonic
-garnish: lemon twist
-serve_in: coupe
-steps:
-  - step: Stir all ingredients over ice, then strain into coupe.
-  - step: Garnish with a twist of lemon.
+    - amount: .75
+      unit: ounce
+drink_type : tonic
+garnish    : lemon twist
+serve_in   : coupe
+steps      :
+- step: Stir all ingredients over ice, then strain into coupe.
+- step: Garnish with a twist of lemon.
 source_book:
-  author: David Kaplan, Nick Fauchald, Alex Day
+  authors:
+  - David Kaplan
+  - Nick Fauchald
+  - Alex Day
   title: Death & Co. Modern Classic Cocktails
-  isbn: 1607745259
+  isbn: '1607745259'

@@ -1,34 +1,35 @@
-drink_name: Fire & Brimstone
+---
+drink_name : Fire & Brimstone
 ingredients:
-  - mezcal:
+- mezcal:
     amounts:
-      - amount: 1.5
-        unit: ounce
-  - triple sec:
+    - amount: 1.5
+      unit: ounce
+- triple sec:
     amounts:
-      - amount: .5
-        unit: ounce
-  - lemon juice:
-    amounts: 
-      - amount: .75
-        unit: ounce 
-  - agave syrup:
+    - amount: .5
+      unit: ounce
+- lemon juice:
     amounts:
-      - amount: .25
-        unit: ounce 
-  - orange bitters:
+    - amount: .75
+      unit: ounce
+- agave syrup:
     amounts:
-      - amount: 2
-        unit: dash
-  - jalepeño:
+    - amount: .25
+      unit: ounce
+- orange bitters:
     amounts:
-      - amount: 2
-        unit: slice
-drink_type: cocktail
-garnish: twist of lemon.
-serve_in: old fashioned glass
-steps:
-  - step: Muddle 2 thin slices of jalepeño in a shaker.
-  - step: Add the rest of the ingredients and shake with ice.
-  - step: Fine strain into an ice filled glass.
-  - step: Garnish with a twist of lemon
+    - amount: 2
+      unit: dash
+- jalepeño:
+    amounts:
+    - amount: 2
+      unit: slice
+drink_type : cocktail
+garnish    : twist of lemon.
+serve_in   : old fashioned glass
+steps      :
+- step: Muddle 2 thin slices of jalepeño in a shaker.
+- step: Add the rest of the ingredients and shake with ice.
+- step: Fine strain into an ice filled glass.
+- step: Garnish with a twist of lemon

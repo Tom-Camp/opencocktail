@@ -1,19 +1,21 @@
-drink_name: Applejack Toddy
+---
+drink_name : Applejack Toddy
 ingredients:
-  - rye whiskey:
+- rye whiskey:
     amounts:
-      - amount: 2.5
-        unit: ounce
-  - honey:
+    - amount: 2.5
+      unit: ounce
+- honey:
     amounts:
-      - amount: 1
-        unit: teaspoon
-  - clove:
+    - amount: 1
+      unit: teaspoon
+- clove:
     amounts:
-      - amount: 4
-drink_type: toddy
-garnish: cinnamon stick.
-serve_in: toddy glass
-steps:
-  - step: Add all of the ingredients to a toddy glass.
-  - step: Fill with hot water.
+    - amount: 4
+      unit: clove
+drink_type : toddy
+garnish    : cinnamon stick.
+serve_in   : toddy glass
+steps      :
+- step: Add all of the ingredients to a toddy glass.
+- step: Fill with hot water.
