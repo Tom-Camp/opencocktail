@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Validate YAML
-      uses: brittonhayes/validate-yaml
+      uses: brittonhayes/validate-yaml@v0.5.1
       with:
         schemaPath: schema.json
         files: |
