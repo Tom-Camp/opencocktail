@@ -11,5 +11,5 @@ jobs:
       with:
         yamlSchemasJson: |
           {
-              "/schema.json": ["/recipes/*.yaml"],
+              "/schema.json": ["/recipes/"],
           }
