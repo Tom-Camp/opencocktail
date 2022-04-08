@@ -1,0 +1,37 @@
+---
+drink_name : Don Daisy
+ingredients:
+- light rum:
+    amounts:
+    - amount: 1.5
+      unit: ounce
+- elderflower liqueur:
+    amounts:
+    - amount: .5
+      unit: ounce
+- dry vermouth:
+    amounts:
+    - amount: .5
+      unit: ounce
+- lemon juice:
+    amounts:
+    - amount: .25
+      unit: ounce
+- simple syrup:
+    amounts:
+    - amount: .25
+      unit: ounce
+- egg white:
+    amounts:
+    - amount: 1
+      unit: egg
+drink_type : cocktail
+garnish    : twist of lemon
+serve_in   : coupe
+steps      :
+- step: Add all ingredients to a shaker
+- step: Dry shake (no ice)
+- step: Add ice and shake again
+- step: Fine strain into a chilled coupe
+- step: Garnish with a twist of lemon
+source_url : https://www.diffordsguide.com/cocktails/recipe/2382/don-daisy
