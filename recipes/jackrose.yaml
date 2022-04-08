@@ -1,0 +1,24 @@
+---
+drink_name : Jack Rose
+ingredients:
+- apple brandy:
+    amounts:
+    - amount: 2
+      unit: ounce
+- lemon juice:
+    amounts:
+    - amount: .5
+      unit: ounce
+- lime juice:
+    amounts:
+    - amount: .5
+      unit: ounce
+- grenadine:
+    amounts:
+    - amount: .5
+      unit: ounce
+drink_type : cocktail
+serve_in   : nick and nora glass
+steps      :
+- step: Add all ingredients to a shaker with ice
+- step: Shake well and strain into a Nick and Nora glass.
