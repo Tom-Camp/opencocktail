@@ -1,35 +1,31 @@
 ---
-drink_name : Don Daisy
+drink_name : Dark 'n' Stormy
 ingredients:
-- light rum:
+- dark rum:
     amounts:
-    - amount: 1.5
+    - amount: 2
       unit: ounce
-- elderflower liqueur:
+- lime juice:
     amounts:
-    - amount: .5
-      unit: ounce
-- dry vermouth:
-    amounts:
-    - amount: .5
-      unit: ounce
-- lemon juice:
-    amounts:
-    - amount: .25
+    - amount: .75
       unit: ounce
 - simple syrup:
     amounts:
-    - amount: .25
+    - amount: .5
       unit: ounce
-- egg white:
+- ginger beer:
     amounts:
-    - amount: 1
-      unit: egg
-drink_type : cocktail
-garnish    : twist of lemon.
-serve_in   : coupe
+    - amount: 4
+      unit: ounce
+    substitutions:
+    - ginger ale:
+        amounts:
+        - amount: 4
+          unit: ounce
+drink_type : highball
+garnish    : slice of lime.
+serve_in   : highball
 steps      :
-- step: Add all ingredients to a shaker
-- step: Dry shake
-- step: Add ice and shake again
-- step: Strain into a cocktail coupe and garnish with a twist of lemon.
+- step: Add rum, simple syrup, and lime juice to a shaker with ice
+- step: Shake and strain into a highball glass 3/4 filled with ice
+- step: Top with ginger beer and garnish with a slice of lime
