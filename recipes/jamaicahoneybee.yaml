@@ -1,0 +1,22 @@
+---
+drink_name : Jamaica Honey Bee
+ingredients:
+- amber rum:
+    amounts:
+    - amount: 2.5
+      unit: ounce
+- lemon juice:
+    amounts:
+    - amount: .75
+      unit: ounce
+- honey syrup:
+    amounts:
+    - amount: .75
+      unit: ounce
+drink_type : cocktail
+garnish    : slice of lemon
+serve_in   : coupe
+steps      :
+- step: Add all ingredients to a ice-filled shaker
+- step: Shake vigorously and strain into a coupe
+- step: Garnish with a slice of lemon
