@@ -1,0 +1,33 @@
+---
+drink_name : Singapore Sling
+ingredients:
+- cherry brandy:
+    amounts:
+    - amount: 50
+      unit: ml
+- gin:
+    amounts:
+    - amount: 25
+      unit: ml
+- lemon juice:
+    amounts:
+    - amount: 25
+      unit: ml
+- soda water:
+    amounts:
+    - amount: 100
+      unit: ml
+drink_type : sling
+serve_in   : collins
+steps      :
+- step: Add all ingredients to an ice-filled shaker
+- step: Shake whell strain into a collins glass
+- step: Top with soda water
+- step: Add 1 lump ice
+source_book:
+  authors:
+  - Harry Craddock
+  title: The Savoy Cocktail Book
+  isbn: '1626540926'
+notes      :
+- This recipe is based on a 100ml (3 ½ fl oz) mixed drink and are made for drinking vessels of approx. 150ml-200ml (5-7 fl oz).
