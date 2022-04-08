@@ -25,7 +25,7 @@ ingredients:
     amounts:
     - amount: 1
       unit: egg
-drink_type : cocktail
+drink_type : daisy
 garnish    : twist of lemon
 serve_in   : coupe
 steps      :
