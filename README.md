@@ -17,7 +17,7 @@ Whiskey and wood heat warms a man's insides - and outs -
 And sure nuff comforts like a winter coat -
 And helps somehow span the darksome night.
 
-- Wayne Caldwell
+- Posey Green
 ```
 
 A collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
