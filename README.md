@@ -1,5 +1,25 @@
 # OpenCocktail Library
 
+```markdown
+Firewater
+
+Didn't use to take my whiskey with ice
+But old age changes many things.
+The other night I banked the fire
+Shut the dampers down, sat in my chair,
+A tall glass of mind-quiet at my side.
+I took a sup and closed my eyes and thought
+Of nothing much past warmth and sleep.
+Then ice and locust popped at once, loud,
+Then fire and ice relaxed together
+In glass and stove like good old friends.
+Whiskey and wood heat warms a man's insides - and outs -
+And sure nuff comforts like a winter coat -
+And helps somehow span the darksome night.
+
+- Wayne Caldwell
+```
+
 A collection of cocktail recipes using the [OpenCocktail](./schema.json) recipe format base off of Techhat's [Open Recipe Format](https://github.com/techhat/openrecipeformat).
 
 ## Prerequisites
